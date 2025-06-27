@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-card">
+        <h2> QR Code Generator</h2>
+        <form method="POST">
+            <input type="text" name="data" placeholder="✨ Enter your UPI Id..." required>
+            <br>
+            <button type="submit">🚀 Generate QR</button>
+        </form>
+
+        {% if qr_generated %}
+            <div class="qr-section">
+                <h3>✅ Your QR Code:</h3>
+                <img src="{{ url_for('static', filename='qr.png') }}" alt="QR Code" width="220">
+                <div class="download-btn">
+                    <a href="{{ url_for('download') }}">
+                        <button type="button">⬇️ Download</button>
+                    </a>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
+

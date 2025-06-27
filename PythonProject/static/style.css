@@ -1,0 +1,81 @@
+/* Apply global font and background */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Glassmorphic container */
+.glass-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    color: white;
+}
+
+/* Headings */
+h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #e0e0e0;
+}
+
+/* Input box */
+input[type="text"] {
+    width: 90%;
+    padding: 12px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+/* Buttons */
+button {
+    background-color: #ff6b81;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #e63946;
+    transform: scale(1.05);
+}
+
+/* QR image styling */
+img {
+    margin-top: 20px;
+    border-radius: 8px;
+    background: white;
+    padding: 10px;
+}
+
+/* Download button container */
+.download-btn {
+    margin-top: 20px;
+}
+
+.download-btn a {
+    text-decoration: none;
+}
